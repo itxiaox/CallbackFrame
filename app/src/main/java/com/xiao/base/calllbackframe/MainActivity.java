@@ -27,4 +27,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this,Main2Activity.class);
         startActivity(intent);
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        FunctionManager.getInstance().removeFunction("functionName");
+    }
 }

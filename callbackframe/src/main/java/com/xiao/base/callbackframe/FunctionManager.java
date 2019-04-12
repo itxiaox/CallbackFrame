@@ -136,4 +136,23 @@ public class FunctionManager {
         return null;
     }
 
+    /**
+     * 从缓存中移除添加的接口对象，通常在Activity/Fragment 销毁的时候调用
+     * @param functionName
+     */
+    public void removeFunction(String functionName){
+        if(mFunctionNoParamNoResult!=null&&!mFunctionNoParamNoResult.isEmpty()&&mFunctionNoParamNoResult.containsKey(functionName)){
+            mFunctionNoParamNoResult.remove(functionName);
+        }
+        if(mFunctionWithParamWithResult!=null&&!mFunctionWithParamWithResult.isEmpty()&&mFunctionWithParamWithResult.containsKey(functionName)){
+            mFunctionWithParamWithResult.remove(functionName);
+        }
+        if(mFunctionWithParamNoResult!=null&&!mFunctionWithParamNoResult.isEmpty()&&mFunctionWithParamNoResult.containsKey(functionName)){
+            mFunctionWithParamNoResult.remove(functionName);
+        }
+        if(mFunctionNoParamWithResult!=null&&!mFunctionNoParamWithResult.isEmpty()&&mFunctionNoParamWithResult.containsKey(functionName)){
+            mFunctionNoParamWithResult.remove(functionName);
+        }
+    }
+
 }  
