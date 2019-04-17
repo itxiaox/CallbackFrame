@@ -47,7 +47,6 @@ FunctionManager.getInstance().addFunction(new FunctionWithParamWithResult<String
         return "callback:"+result;
     }
 });
-
 /**
  * 执行调用
  */
