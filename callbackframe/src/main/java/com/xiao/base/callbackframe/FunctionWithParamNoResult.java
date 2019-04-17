@@ -11,5 +11,9 @@ public abstract class FunctionWithParamNoResult<Param> extends Function{
         super(functionName);
     }
 
+    /**
+     * 执行方法
+     * @param param 参数
+     */
     protected abstract void function(Param param);
 }

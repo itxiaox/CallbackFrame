@@ -9,5 +9,11 @@ public abstract class FunctionWithParamWithResult<Result,Param> extends Function
     public FunctionWithParamWithResult(String functionName) {
         super(functionName);
     }
+
+    /**
+     * 执行方法
+     * @param param 参数
+     * @return 返回Result类型
+     */
     protected abstract Result function(Param param);
 }

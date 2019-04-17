@@ -4,9 +4,8 @@ package com.xiao.base.callbackframe;
 import java.util.HashMap;
 
 /**
- * 作者：wb on 2017-08-24 10:32
- * 邮箱：493204277@qq.com
- * 功能：总的manager管理, 接口管理类，将接口变成对象，然后存储到集合中，当需要使用的时候就从map中取到当前的方法，并进行调用
+ * 总的manager管理, 接口管理类，将接口变成对象，然后存储到集合中，当需要使用的时候就从map中取到当前的方法，并进行调用
+ * Created by xiao on 2017/12/8.
  */
 
 public class FunctionManager {
@@ -26,8 +25,6 @@ public class FunctionManager {
         }
         return functionManager;
     }
-
-
     private static HashMap<String, FunctionNoParamNoResult> mFunctionNoParamNoResult;
     private static HashMap<String, FunctionWithParamWithResult> mFunctionWithParamWithResult;
     private static HashMap<String, FunctionWithParamNoResult> mFunctionWithParamNoResult;
@@ -36,8 +33,8 @@ public class FunctionManager {
     /**
      * 添加无参数无返回值
      *
-     * @param function
-     * @return
+     * @param function FunctionNoParamNoResult
+     * @return FunctionManager
      */
     public FunctionManager addFunction(FunctionNoParamNoResult function) {
         if (mFunctionNoParamNoResult != null) {
@@ -49,8 +46,8 @@ public class FunctionManager {
     /**
      * 添加有参数有返回值
      *
-     * @param function
-     * @return
+     * @param function FunctionWithParamWithResult
+     * @return FunctionManager
      */
     public FunctionManager addFunction(FunctionWithParamWithResult function) {
         if (mFunctionWithParamWithResult != null) {
@@ -62,8 +59,8 @@ public class FunctionManager {
     /**
      * 添加有参数无返回值
      *
-     * @param function
-     * @return
+     * @param function FunctionWithParamNoResult
+     * @return FunctionManager
      */
     public FunctionManager addFunction(FunctionWithParamNoResult function) {
         if (mFunctionWithParamNoResult != null) {
@@ -75,8 +72,8 @@ public class FunctionManager {
     /**
      * 添加吴参数有返回值
      *
-     * @param function
-     * @return
+     * @param function FunctionNoParamWithResult
+     * @return FunctionManager
      */
     public FunctionManager addFunction(FunctionNoParamWithResult function) {
         if (mFunctionNoParamWithResult != null) {
@@ -111,10 +108,10 @@ public class FunctionManager {
     /**
      * 有参数有返回值
      *
-     * @param key
-     * @param param
-     * @param <Result>
-     * @param <Param>
+     * @param key 回调接口参数的名字，使用时候个每个接口参数取个别名
+     * @param param 接口的参数对象
+     * @param <Result>  Result
+     * @param <Param> Param
      * @return
      */
     public <Result, Param> Result invokeFunction(String key, Param param) {
@@ -138,7 +135,7 @@ public class FunctionManager {
 
     /**
      * 从缓存中移除添加的接口对象，通常在Activity/Fragment 销毁的时候调用
-     * @param functionName
+     * @param functionName functionName
      */
     public void removeFunction(String functionName){
         if(mFunctionNoParamNoResult!=null&&!mFunctionNoParamNoResult.isEmpty()&&mFunctionNoParamNoResult.containsKey(functionName)){
