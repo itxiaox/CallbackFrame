@@ -1,4 +1,5 @@
 # 万能回调接口框架CallbackFrame
+[ ![Download](https://api.bintray.com/packages/itxiaox/maven/callbackframe/images/download.svg) ](https://bintray.com/itxiaox/maven/callbackframe/_latestVersion)
 
 ## 1. 功能介绍
 
@@ -21,7 +22,7 @@ allprojects {
 ```
 在module 中添加依赖
 ```
-compile 'com.baichuang:callbackframe:1.0.0'
+compile 'com.itxiaox:callbackframe:1.0.0'
 ```
 
 * 代码示例
@@ -62,3 +63,19 @@ compile 'com.baichuang:callbackframe:1.0.0'
     
 [参考视频](https://study.163.com/course/courseLearn.htm?courseId=1209230809#/learn/live?lessonId=1278875538&courseId=1209230809) 
 
+
+# LICENSE
+
+	Copyright 2018 Xiaox
+
+	Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License.
+	You may obtain a copy of the License at
+
+	   http://www.apache.org/licenses/LICENSE-2.0
+
+	Unless required by applicable law or agreed to in writing, software
+	distributed under the License is distributed on an "AS IS" BASIS,
+	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+	See the License for the specific language governing permissions and
+	limitations under the License.
