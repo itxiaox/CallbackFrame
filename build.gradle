@@ -7,7 +7,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.2'
+        classpath 'com.android.tools.build:gradle:3.1.4'
 
 //        classpath 'com.novoda:bintray-release:0.4.0'
         //Android Studio3.14以及以上的版本需要将引入
@@ -16,20 +16,12 @@ buildscript {
         // in the individual module build.gradle files
     }
 
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.3.2'
-//        classpath 'com.novoda:bintray-release:0.4.0'
-        //Android Studio3.14以及以上的版本需要将引入
-        classpath 'com.novoda:bintray-release:0.8.0'
-    }
-
 }
 
 allprojects {
     repositories {
         google()
         jcenter()
-
         maven {
             url 'https://dl.bintray.com/baichuang/maven/'
         }

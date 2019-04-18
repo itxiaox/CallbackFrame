@@ -85,7 +85,7 @@ public class FunctionManager {
     /**
      * 执行没参数没返回值的
      *
-     * @param key
+     * @param key key
      */
     public void invokeFunction(String key) {
         if (key == null || key.equals("")) {
@@ -112,7 +112,7 @@ public class FunctionManager {
      * @param param 接口的参数对象
      * @param <Result>  Result
      * @param <Param> Param
-     * @return
+     * @return  返回Result
      */
     public <Result, Param> Result invokeFunction(String key, Param param) {
         if (key == null || key.equals("")) {

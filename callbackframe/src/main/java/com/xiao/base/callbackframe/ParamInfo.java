@@ -20,6 +20,7 @@ public class ParamInfo<K, V> {
     }
     /**
      * 设置参数的键
+     * @param key key
      */
     public void setKey(K key) {
         this.key = key;
@@ -32,6 +33,7 @@ public class ParamInfo<K, V> {
         return value;
     }/**
      * 设置参数的Value
+     * @param value key
      */
     public void setValue(V value) {
         this.value = value;
