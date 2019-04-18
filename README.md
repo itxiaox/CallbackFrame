@@ -1,5 +1,5 @@
 # 万能回调接口框架CallbackFrame
-[ ![Download](https://api.bintray.com/packages/baichuang/maven/callbackframe/images/download.svg) ](https://bintray.com/baichuang/maven/callbackframe/_latestVersion)
+[ ![Download](https://api.bintray.com/packages/itxiaox/maven/callbackframe/images/download.svg) ](https://bintray.com/itxiaox/maven/callbackframe/_latestVersion)
 
 ## 1. 功能介绍
 
@@ -22,7 +22,7 @@ allprojects {
 ```
 在module 中添加依赖
 ```
-compile 'com.baichuang:callbackframe:1.0.0'
+compile 'com.itxiaox:callbackframe:1.0.0'
 ```
 
 * 代码示例
