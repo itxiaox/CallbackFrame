@@ -1,4 +1,5 @@
 # 万能回调接口框架CallbackFrame
+[ ![Download](https://api.bintray.com/packages/baichuang/maven/callbackframe/images/download.svg) ](https://bintray.com/baichuang/maven/callbackframe/_latestVersion)
 
 ## 1. 功能介绍
 
