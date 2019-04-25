@@ -18,14 +18,14 @@ allprojects {
     repositories {
         jcenter()
         maven {
-            url 'https://dl.bintray.com/baichuang/maven/'
+            url 'https://dl.bintray.com/itxiaox/maven/'
         }
     }
 }
 ```
 在module 中添加依赖
 ```
-compile 'com.itxiaox:callbackframe:1.0.0'
+compile 'com.itxiaox:callbackframe:1.0.1'
 ```
 
 * 代码示例
